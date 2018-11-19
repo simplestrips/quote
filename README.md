@@ -22,3 +22,10 @@ $ ng generate service brand
 $ ng generate component --spec=false pgbrand            
 ```      
 1. Able to display the brands in the pgbrand component via the brands service.         
+
+
+**Nov 19, 2018**     
+
+1. Added Materialize and material icons.        
+1. Updated page 'brand'      
+1. Added page 'expire' and the ability to go back in the location stack.     

@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { PgbrandComponent } from './pgbrand/pgbrand.component';
+import { PgexpireComponent } from './pgexpire/pgexpire.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { PgbrandComponent } from './pgbrand/pgbrand.component';
   declarations: [
     AppComponent,
     PgbrandComponent,
+    PgexpireComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,10 @@
-<ul class="brands">
-  <li *ngFor="let brand of brands">
-    <a href="#">{{brand.name}}</a>
-  </li>
-</ul>
+
+<h3>{{title}}</h3>
+<h5>{{excerpt}}</h5>
+
+<div class="collection">
+  <a *ngFor="let brand of brands" routerLink="/expire" class="collection-item">
+    {{brand.name}}
+    <i class="material-icons">keyboard_arrow_right</i>
+  </a>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as M from '../../assets/js/materialize.min.js';
 
 // MODELS
 import { Box } from '../models/box'; // Box Model
@@ -15,6 +16,10 @@ import { BrandService } from '../services/brand/brand.service'; // Brand Service
 })
 
 export class PgbrandComponent implements OnInit {
+
+
+  public title:string = "Choose The Brand";
+  public excerpt:string = "Something Else."
 
   public boxes: Box[];
   public brands: Brand[];
