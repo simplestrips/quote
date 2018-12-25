@@ -29,3 +29,8 @@ $ ng generate component --spec=false pgbrand
 1. Added Materialize and material icons.        
 1. Updated page 'brand'      
 1. Added page 'expire' and the ability to go back in the location stack.     
+
+**Dec 25, 2018**          
+
+1. Added components directory      
+1. Added 'titleExcerpt' global component     (**SEE** Sketch File "")  
