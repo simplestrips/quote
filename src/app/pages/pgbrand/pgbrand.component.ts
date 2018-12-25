@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import * as M from '../../assets/js/materialize.min.js';
+import * as M from '../../../assets/js/materialize.min.js';
 
 // MODELS
-import { Box } from '../models/box'; // Box Model
-import { Brand } from '../models/brand'; // Brand Model
+import { Box } from '../../models/box'; // Box Model
+import { Brand } from '../../models/brand'; // Brand Model
 
 // SERVICES
-import { BoxService } from '../services/box/box.service'; // Box Service
-import { BrandService } from '../services/brand/brand.service'; // Brand Service
+import { BoxService } from '../../services/box/box.service'; // Box Service
+import { BrandService } from '../../services/brand/brand.service'; // Brand Service
 
 @Component({
   selector: 'app-pgbrand',
@@ -19,7 +19,7 @@ export class PgbrandComponent implements OnInit {
 
 
   public title:string = "Choose The Brand";
-  public excerpt:string = "Something Else."
+  public excerpt:string = "Here is where you tell them about something";
 
   public boxes: Box[];
   public brands: Brand[];

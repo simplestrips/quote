@@ -1,2 +1,213 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+==========================================
+Table Of Contents
+1. Global Variables
+1. Footer Button Mixin
+
+1. Materialize - https://materializecss.com/
+
+1. Header
+1. Footer
+
+==========================================
+*/
+
+// VARIABLES
+$demo_color: transparent; // rgba(0, 206, 255, 0.1)
+
+// MIXIN(S)
+
+// 1. Footer Button Mixin
+@mixin footerBtn {
+  border: none;
+  font-size: 3rem;
+  height: inherit;
+  padding: 0px;
+  position: absolute;
+  top: 0;
+  width: 50%;
+
+  span {
+    font-weight: 100;
+    height: 100%;
+    padding-bottom: 0;
+    padding-top: 25px;
+    position: absolute;
+    top: 0;
+  }
+
+  i {
+    background-color: $demo_color;
+    font-size: 4rem;
+    height: 100%;
+    padding-bottom: 0px;
+    padding-top: 23px;
+    position: absolute;
+    top: 0;
+  }
+}
+
+
+// 1. Materialize - https://materializecss.com/
 @import "./assets/css/materialize.min.css";
+
+
+// 1. Header
+header {
+  background-color: $demo_color;
+  padding: 10px;
+  position: relative;
+}
+
+// 1. Footer
+footer {
+  background-color: rgba(241, 241, 241, 0.1);
+  border-top: 1px solid #CCC;
+  bottom: 0;
+  height: 100px;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+}
+
+
+
+// BUTTON: GO BACK
+.btn-back {
+  @include footerBtn;
+  background-color: rgba(241, 241, 241, 0.3);
+  left: 0;
+
+  span{
+    background-color: $demo_color;
+    left: 0;
+    padding-left: 70px;
+    padding-right: 0px;
+  }
+
+  i {
+    left: 0;
+    padding-left: 15px;
+    padding-right: 0px;
+  }
+}
+.btn-next {
+  @include footerBtn;
+  background-color: $demo_color;
+  right: 0;
+
+  span{
+    background-color: $demo_color;
+    padding-left: 0px;
+    padding-right: 70px;
+    right: 0;
+  }
+
+  i {
+    padding-left: 0px;
+    padding-right: 15px;
+    right: 0;
+  }
+}
+.btn-cancel {
+}
+
+.title-heading {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 3rem;
+  color: #000;
+  margin-bottom: 25px;
+  font-weight: 100;
+}
+
+.excerpt-heading {
+  color: #000;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 100;
+}
+
+.collection {
+  border: none !important;
+  padding: 0 15px !important;
+
+  .collection-item {
+    font-size: 20px !important;
+    padding: 20px !important;
+    color: #6282a7 !important;
+  }
+}
+
+
+
+
+
+
+// DATE PICKER
+.datepicker-modal {
+  max-width: 100% !important;
+  min-width: 95% !important;
+  top: 15px !important;
+}
+
+.datepicker-controls {
+  width: 100% !important;
+
+  .selects-container {
+    width: 100%;
+    font-size: 30px;
+    padding: 20px;
+    background-color: crimson;
+
+    .select-month {
+
+    }
+    .select-year {
+
+    }
+
+    input {
+      width: 100%;
+      background-color: antiquewhite;
+      font-size: 32px;
+    }
+  }
+}
+
+.select-wrapper {
+  width: 100% !important;
+  background-color: aqua !important;
+  text-align: center !important;
+}
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+  font-size: 36px;
+  color: #26a69a;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+}
+
+
+.datepicker-table {
+  width: 100% !important;
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+.datepicker-footer {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+
+    button {
+      font-size: 30px;
+    }
+}

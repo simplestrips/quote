@@ -6,8 +6,8 @@ import { HttpClientModule }    from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { PgbrandComponent } from './pgbrand/pgbrand.component';
-import { PgexpireComponent } from './pgexpire/pgexpire.component';
+import { PgbrandComponent } from './pages/pgbrand/pgbrand.component';
+import { PgexpireComponent } from './pages/pgexpire/pgexpire.component';
 
 @NgModule({
   imports: [

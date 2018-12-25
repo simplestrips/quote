@@ -1,6 +1,13 @@
 
-<h3>{{title}}</h3>
-<h5>{{excerpt}}</h5>
+<!--
+CHOOSE BRAND
+Quering the 'brand' api endpoint
+-->
+
+<header class="pg-header">
+  <h3 class="title-heading">{{title}}</h3>
+  <h5 class="excerpt-heading">{{excerpt}}</h5>
+</header>
 
 <div class="collection">
   <a *ngFor="let brand of brands" routerLink="/expire" class="collection-item">
